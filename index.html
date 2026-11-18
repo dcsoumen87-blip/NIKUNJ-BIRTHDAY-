@@ -1,119 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080914">
-<title>Happy Birthday Nikunj</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffdf00">
+<title>Nikunj.exe Has Levelled Up</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap');
-:root{--blue:#48b8ff;--purple:#9b68ff;--gold:#ffd36a;--bg:#080914}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:'DM Sans',sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 20%,#173b6a55,transparent 32%),radial-gradient(circle at 85% 65%,#542b7950,transparent 34%),linear-gradient(135deg,#080914,#0c1020 55%,#100b1c);z-index:-2}
-#stars{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.6;animation:twinkle 3s infinite alternate}@keyframes twinkle{to{opacity:.12;transform:scale(.5)}}
-header{position:fixed;top:0;left:0;right:0;padding:17px 7%;display:flex;justify-content:space-between;align-items:center;z-index:10;background:#0809149c;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
-.logo{font-family:Orbitron,sans-serif;font-weight:900;letter-spacing:2px;color:#fff}.logo span{color:var(--blue)}.sound{border:1px solid #ffffff35;background:#ffffff0b;color:white;border-radius:30px;padding:9px 15px;cursor:pointer}
-section{min-height:100vh;padding:110px 8% 70px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
-.wrap{max-width:900px;margin:auto}.eyebrow{color:var(--blue);letter-spacing:4px;text-transform:uppercase;font-size:12px;font-weight:700}
-h1,h2{font-family:Orbitron,sans-serif;margin:16px 0;line-height:1.12}h1{font-size:clamp(2.6rem,8vw,6.7rem);text-shadow:0 0 35px #48b8ff55}h1 .name{background:linear-gradient(90deg,#fff,var(--blue),#c29cff);-webkit-background-clip:text;color:transparent}
-h2{font-size:clamp(2rem,5vw,4rem)}p{color:#c5c9d8;line-height:1.8;font-size:clamp(1rem,2vw,1.15rem)}
-.btn{display:inline-block;margin:18px 7px 0;padding:14px 24px;border:0;border-radius:40px;color:#08101b;background:linear-gradient(100deg,var(--blue),#b99aff);font-weight:900;letter-spacing:.5px;cursor:pointer;box-shadow:0 0 28px #48b8ff45;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:0 0 38px #9b68ff75}.btn.ghost{background:#ffffff0c;color:white;border:1px solid #ffffff30;box-shadow:none}
-.badge{display:inline-block;border:1px solid #ffffff25;border-radius:30px;padding:8px 14px;color:#d8d8ed;font-size:12px;letter-spacing:1px}
-.scroll{margin-top:45px;color:#8b91a9;font-size:12px;letter-spacing:2px}
-.cake{font-size:clamp(5rem,17vw,10rem);filter:drop-shadow(0 0 25px #9b68ff75);animation:bob 3s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-13px) rotate(2deg)}}
-.card{background:linear-gradient(145deg,#ffffff13,#ffffff05);border:1px solid #ffffff20;border-radius:28px;padding:clamp(22px,5vw,45px);box-shadow:0 20px 70px #0006;backdrop-filter:blur(12px)}
-.glass-row{display:flex;gap:30px;justify-content:center;align-items:center;flex-wrap:wrap;margin:35px 0}
-.glass{width:150px;height:190px;position:relative;display:flex;align-items:flex-end;justify-content:center;perspective:500px;animation:float 3s ease-in-out infinite}
-.glass:nth-child(2){animation-delay:.5s}@keyframes float{50%{transform:translateY(-12px)}}
-.mug{width:92px;height:115px;border:4px solid #d8eaffaa;border-top:2px solid #fff;border-radius:8px 8px 25px 25px;position:relative;overflow:visible;background:linear-gradient(90deg,#ffffff25,#ffffff05 35%,#ffffff20);box-shadow:inset 0 0 18px #fff4,0 0 22px #48b8ff45;transform:rotate(-4deg)}
-.mug:before{content:"";position:absolute;right:-28px;top:17px;width:28px;height:55px;border:7px solid #d8eaffaa;border-left:0;border-radius:0 22px 22px 0}
-.beer{position:absolute;bottom:0;left:0;right:0;height:72%;border-radius:0 0 18px 18px;background:linear-gradient(90deg,#b96a14,#ffd36a 35%,#f7a52e 70%,#a95812);box-shadow:inset 0 8px 12px #fff7;animation:liquid 3s ease-in-out infinite}
-.beer:before{content:"";position:absolute;top:-13px;left:-2px;right:-2px;height:25px;border-radius:50%;background:radial-gradient(ellipse,#fff9 0 40%,#ffe6a8 65%,#f5a82c 100%)}
-.whiskey{width:105px;height:85px;border:4px solid #e5e9ffad;border-top:2px solid #fff;border-radius:5px 5px 22px 22px;position:relative;background:linear-gradient(90deg,#ffffff22,#ffffff05,#ffffff22);box-shadow:inset 0 0 15px #fff4,0 0 22px #ffd36a45;transform:rotate(3deg);overflow:hidden}
-.liquid{position:absolute;bottom:0;left:0;right:0;height:58%;background:linear-gradient(90deg,#9c4d13,#f7bd4c,#b65d17);border-radius:0 0 16px 16px;animation:liquid 3s ease-in-out infinite}
-@keyframes liquid{50%{height:65%}}
-.cheers{font-family:Orbitron,sans-serif;color:var(--gold);font-size:clamp(1.2rem,4vw,2rem);text-shadow:0 0 20px #ffd36a88}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;margin-top:28px}.tile{padding:22px 15px;border-radius:18px;background:#ffffff0b;border:1px solid #ffffff18}.tile b{display:block;margin:8px 0;color:#fff}.tile span{font-size:2rem}
-.message{font-size:clamp(1.1rem,3vw,1.5rem);color:#e8e8f5}.signature{font-family:Orbitron,sans-serif;color:var(--gold);margin-top:24px;letter-spacing:2px}
-footer{text-align:center;padding:30px 15px;color:#737b95;font-size:12px}
-#confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}.piece{position:absolute;top:-20px;width:8px;height:13px;animation:fall 3.8s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(800deg);opacity:0}}
-.hidden{display:none}
-@media(max-width:600px){header{padding:14px 5%}section{padding:100px 6% 60px}.glass{transform:scale(.88)}}
-</style>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@500;700;900&display=swap');
+:root{--yellow:#ffdf00;--pink:#ff4d9d;--blue:#37d7ff;--ink:#171717}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--yellow);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.22;background-image:radial-gradient(#171717 1.4px,transparent 1.4px);background-size:17px 17px}
+header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:13px 6%;background:var(--yellow);border-bottom:4px solid var(--ink)}
+.logo{font-family:'Archivo Black';font-size:19px;letter-spacing:-1px}.logo span{color:var(--pink)}
+button{font:900 14px 'DM Sans';cursor:pointer;border:3px solid var(--ink);background:var(--pink);color:white;padding:12px 18px;border-radius:9px;box-shadow:5px 5px 0 var(--ink);transition:.15s}
+button:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}
+section{min-height:100vh;padding:110px 7% 70px;display:grid;place-items:center;text-align:center}
+.wrap{max-width:900px;margin:auto}.tag{display:inline-block;background:var(--ink);color:var(--yellow);padding:8px 13px;font-weight:900;letter-spacing:2px;transform:rotate(-2deg)}
+h1,h2{font-family:'Archivo Black',sans-serif;line-height:.98;text-transform:uppercase;letter-spacing:-2px;margin:20px 0}
+h1{font-size:clamp(3.1rem,11vw,8rem);text-shadow:5px 5px 0 white,9px 9px 0 var(--pink)}
+h2{font-size:clamp(2.5rem,8vw,5.5rem);text-shadow:4px 4px 0 white}
+p{font-size:clamp(1.05rem,2.5vw,1.3rem);font-weight:700;line-height:1.55}
+.big{font-size:clamp(5rem,18vw,11rem);display:block;filter:drop-shadow(5px 6px 0 #171717);animation:wobble 2s infinite}
+@keyframes wobble{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg) scale(1.06)}}
+.panel{background:white;border:4px solid var(--ink);border-radius:18px;padding:clamp(22px,5vw,45px);box-shadow:10px 10px 0 var(--ink);transform:rotate(-1deg)}
+.panel.alt{background:var(--pink);color:white;transform:rotate(1deg)}
+.panel.alt p{color:white}
+.btn2{background:var(--blue);color:var(--ink)}
+.sticker{display:inline-block;font-size:13px;font-weight:900;padding:7px 12px;border:3px solid var(--ink);background:var(--blue);transform:rotate(3deg);margin:8px}
+.memegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin:28px 0}
+.meme{background:white;border:3px solid var(--ink);padding:20px 12px;box-shadow:6px 6px 0 var(--ink);font-weight:900;transform:rotate(var(--r))}
+.meme span{font-size:2.6rem;display:block;margin-bottom:10px}
+.small{font-size:.9rem}
+footer{text-align:center;padding:28px;background:var(--ink);color:var(--yellow);font-weight:900;letter-spacing:2px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:9;overflow:hidden}.bit{position:absolute;top:-20px;width:12px;height:12px;animation:drop 3s linear forwards}@keyframes drop{to{transform:translateY(110vh) rotate(900deg);opacity:0}}
+@media(max-width:600px){header{padding:12px 4%}.logo{font-size:15px}section{padding-left:5%;padding-right:5%}}
+</style></head>
 <body>
-<div id="stars"></div><div id="confetti"></div>
-<header><div class="logo">N<span>•</span> NIGHT</div><button class="sound" id="soundBtn">♫ Sound: Off</button></header>
+<div id="confetti"></div>
+<header><div class="logo">NIKUNJ<span>.EXE</span> 🤡</div><button onclick="party()">PARTY MODE 🔊</button></header>
 
-<section id="home"><div class="wrap">
-<div class="badge">A SPECIAL MESSAGE FOR YOU</div>
-<div class="eyebrow" style="margin-top:28px">BRO CODE • LEVEL UP</div>
-<h1>HEY <span class="name">NIKUNJ!</span></h1>
-<p>Someone has prepared a little surprise for you.<br>Ready to unlock your birthday experience?</p>
-<button class="btn" onclick="go('gift');celebrate()">OPEN YOUR SURPRISE ✦</button>
-<div class="scroll">SCROLL DOWN • THE NIGHT IS YOURS</div>
+<section id="start"><div class="wrap">
+<div class="tag">⚠️ OFFICIAL PUBLIC NOTICE ⚠️</div>
+<h1>BREAKING<br>NEWS!</h1>
+<span class="big">🤡</span>
+<p>A rare specimen named <b>NIKUNJ</b> has successfully survived another 365 days.</p>
+<p><span class="sticker">AGE 69</span><span class="sticker">BRAIN CELLS: SAME</span><span class="sticker">BAKCHODI: UNLIMITED</span></p>
+<button onclick="go('roast');party()"> THIS IS FOR YOU →</button>
 </div></section>
 
-<section id="gift"><div class="wrap">
-<div class="eyebrow">01 / THE SURPRISE</div><div class="cake">🎁</div>
-<h2>ONE MORE YEAR.<br><span style="color:var(--blue)">MORE LEGENDARY.</span></h2>
-<p>Not just another birthday. It's another chapter of your madness, memories and legendary moments.</p>
-<button class="btn" onclick="go('birthday');celebrate()">UNWRAP THE NEXT SURPRISE →</button>
+<section id="roast"><div class="wrap panel">
+<div class="tag">01 • BIRTHDAY ROAST DEPARTMENT</div>
+<h2>HAPPY BIRTHDAY,<br>NIKUNJ! 🎂</h2>
+<span class="big">🗿</span>
+<p>Bro, you're not getting older… you're becoming a limited-edition problem.</p>
+<p>Face: loading…<br>Brain: server not responding…<br>Attitude: premium subscription without payment. 😂</p>
+<button class="btn2" onclick="go('awards');party()">SHOW MY AWARDS 🏆</button>
 </div></section>
 
-<section id="birthday"><div class="wrap">
-<div class="eyebrow">02 / MAIN EVENT</div><div class="cake">🎂</div>
-<h1 style="font-size:clamp(2.3rem,7vw,5.5rem)">HAPPY<br><span class="name">BIRTHDAY!</span></h1>
-<h2 style="color:var(--gold)">NIKUNJ 👑</h2>
-<p>May your year be packed with big wins, wild laughs, good health and unforgettable adventures.</p>
-<button class="btn" onclick="go('cheers')">LET'S CELEBRATE →</button>
-</div></section>
-
-<section id="cheers"><div class="wrap">
-<div class="eyebrow">03 / THE CELEBRATION</div>
-<h2>CHEERS TO<br><span style="color:var(--gold)">NIKUNJ!</span></h2>
-<p>Raise a glass to great memories, stronger brotherhood and all the good times still ahead.</p>
-<div class="glass-row">
-<div class="glass"><div class="mug"><div class="beer"></div></div></div>
-<div class="glass"><div class="whiskey"><div class="liquid"></div></div></div>
+<section id="awards"><div class="wrap">
+<div class="tag">02 • THE ANNUAL NONSENSE AWARDS</div>
+<h2>CONGRATS BRO,<br>YOU WON…</h2>
+<div class="memegrid">
+<div class="meme" style="--r:-2deg"><span>🥇</span>Best Overthinker<br><small>For thinking 2 days before replying “ok”.</small></div>
+<div class="meme" style="--r:2deg"><span>🏆</span>CEO of Bakchodi<br><small>Zero salary. Full-time nonsense.</small></div>
+<div class="meme" style="--r:-1deg"><span>🧠</span>Most Confident<br><small>Even when 100% wrong.</small></div>
+<div class="meme" style="--r:2deg"><span>🛌</span>Hardest Worker<br><small>At doing absolutely nothing.</small></div>
 </div>
-<div class="cheers">CLINK! 🍻</div>
-<p style="font-size:.9rem">A little birthday toast — celebrate responsibly.</p>
-<button class="btn" onclick="clink();celebrate()">CHEERS, BRO! 🍻</button>
-<button class="btn ghost" onclick="go('bro')">NEXT SURPRISE →</button>
+<button onclick="go('party')">UNLOCK PARTY MODE →</button>
 </div></section>
 
-<section id="bro"><div class="wrap">
-<div class="eyebrow">04 / BROTHERHOOD</div>
-<h2>NOT JUST A FRIEND.<br><span class="name">A BROTHER.</span></h2>
-<div class="grid">
-<div class="tile"><span>😂</span><b>Unlimited Madness</b><small>Some jokes never get old.</small></div>
-<div class="tile"><span>🤝</span><b>Always Got Your Back</b><small>Through every high and low.</small></div>
-<div class="tile"><span>🚀</span><b>More Adventures</b><small>The best stories are still ahead.</small></div>
+<section id="party"><div class="wrap panel alt">
+<div class="tag" style="background:white;color:#171717">03 • THE LEGENDARY PARTY</div>
+<h2>CHEERS TO<br>THIS IDIOT! 🍻</h2>
+<div style="font-size:clamp(4rem,15vw,8rem);margin:20px">🍺 🥃</div>
+<p>May your problems be small, your salary be huge, and your weekend never end.</p>
+<p>Raise a glass to another year of questionable decisions and unforgettable stories.</p>
+<p class="small">Party responsibly. Hydrate too, legend. 💧</p>
+<button class="btn2" onclick="toast()">CHEERS, NIKUNJ! 🍻</button>
+<button onclick="go('final')">ONE LAST INSULT →</button>
+</div></section>
+
+<section id="final"><div class="wrap">
+<div class="tag">04 • SENTIMENTAL MOMENT (DON'T CRY)</div>
+<span class="big">🫂</span>
+<h1>LOVE YOU<br>YOU DONKEY!</h1>
+<div class="panel">
+<p>Jokes Sapart, bro — you're genuinely one of a kind. Thanks for all the laughs, random nonsense and memories. Abar Biye Ta Kore Ne, Nale R Meya pabi Na </p>
+<p>Stay mad, stay funny, stay exactly this pagal version of yourself.</p>
+<h2 style="font-size:clamp(2rem,6vw,4rem)">HAPPY BIRTHDAY! ❤️</h2>
+<p><b>Now stop reading and arrange the treat. 💸</b></p>
+<button onclick="go('start');party()">REPLAY THE ROAST ↻</button>
 </div>
-<p class="message" style="margin-top:35px">“Life is better with a bro like you. Stay crazy, stay genuine, and never stop being YOU.”</p>
-<button class="btn" onclick="go('final');celebrate()">ONE LAST THING →</button>
 </div></section>
-
-<section id="final"><div class="wrap card">
-<div class="cake">🎆</div>
-<div class="eyebrow">THE FINAL MESSAGE</div>
-<h1 style="font-size:clamp(2.4rem,7vw,5rem)">HAPPY<br><span class="name">BIRTHDAY</span></h1>
-<h2 style="color:var(--gold)">NIKUNJ!</h2>
-<p class="message">Another year older, another year bolder.<br>Keep winning, keep smiling, and keep being the legend you are.</p>
-<div class="signature">YOUR BRO, ALWAYS 🤜🤛</div>
-<button class="btn" onclick="go('home');celebrate()">REPLAY THE SURPRISE ↻</button>
-</div></section>
-<footer>MADE WITH BROTHERHOOD • FOR NIKUNJ ✦</footer>
-
+<footer>MADE WITH 2% EMOTION & 98% BAKCHODI • FOR NIKUNJ</footer>
 <script>
-const stars=document.getElementById('stars');
-for(let i=0;i<95;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';stars.appendChild(s)}
 function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
-function celebrate(){const box=document.getElementById('confetti');for(let i=0;i<90;i++){let p=document.createElement('i');p.className='piece';p.style.left=Math.random()*100+'%';p.style.background=['#48b8ff','#9b68ff','#ffd36a','#fff'][Math.floor(Math.random()*4)];p.style.animationDelay=Math.random()*.8+'s';p.style.transform=`rotate(${Math.random()*360}deg)`;box.appendChild(p);setTimeout(()=>p.remove(),4700)}}
-function clink(){const btn=document.querySelector('.cheers');btn.textContent='CHEERS, BRO! 🍻';btn.animate([{transform:'scale(1)'},{transform:'scale(1.2)'},{transform:'scale(1)'}],{duration:500})}
-let audioCtx=null,osc=null,playing=false;
-document.getElementById('soundBtn').addEventListener('click',()=>{const b=document.getElementById('soundBtn');if(!playing){audioCtx=new(window.AudioContext||window.webkitAudioContext)();osc=audioCtx.createOscillator();let gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=220;gain.gain.value=.018;osc.connect(gain);gain.connect(audioCtx.destination);osc.start();playing=true;b.textContent='♫ Sound: On'}else{osc.stop();audioCtx.close();playing=false;b.textContent='♫ Sound: Off'}});
-</script>
-</body>
-</html>
+function party(){const c=document.getElementById('confetti');for(let i=0;i<85;i++){let x=document.createElement('i');x.className='bit';x.style.left=Math.random()*100+'%';x.style.background=['#ff4d9d','#37d7ff','#171717','#fff'][Math.floor(Math.random()*4)];x.style.animationDelay=Math.random()*.8+'s';c.appendChild(x);setTimeout(()=>x.remove(),3900)}}
+function toast(){party();const b=document.querySelector('#party .btn2');b.textContent='CLINK! BROOO! 🍻';b.animate([{transform:'rotate(0) scale(1)'},{transform:'rotate(-5deg) scale(1.12)'},{transform:'rotate(5deg) scale(1.12)'},{transform:'rotate(0) scale(1)'}],{duration:650})}
+</script></body></html>
